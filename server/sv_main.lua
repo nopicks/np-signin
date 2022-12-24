@@ -30,7 +30,7 @@ AddEventHandler("np-signin:duty", function(pJobType, pSrc)
             Wait(1000)
             TriggerEvent("isTherapist",src)
         else
-        TriggerClientEvent("DoLongHudText", src, ("You are now signed in as %s"):format(pJobType), 17)
+            TriggerClientEvent("DoLongHudText", src, ("You are now signed in as %s"):format(pJobType), 17)
         end
     end)
 end)
